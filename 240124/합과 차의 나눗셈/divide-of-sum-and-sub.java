@@ -8,13 +8,8 @@ public class Main {
         int a = Integer.parseInt(arr[0]);
         int b = Integer.parseInt(arr[1]);
 
-        double p = a+b;
-        double m = a-b;
+        double result = (double) (a + b) / (a - b);
 
-        double result = (double)p/m;
-
-        System.out.println(Math.round(result*100)/100.0);
-
-        
+        System.out.println(Math.round(result * 100) / 100.0);
     }
 }
