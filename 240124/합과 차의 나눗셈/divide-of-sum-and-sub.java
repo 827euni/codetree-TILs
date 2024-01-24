@@ -8,13 +8,11 @@ public class Main {
         int a = Integer.parseInt(arr[0]);
         int b = Integer.parseInt(arr[1]);
 
-        if (b==0) {
+        if (b == 0) {
             System.out.println("1.00");
+        } else {
+            double result = (double) (a + b) / (a - b);
+            System.out.println(Math.round(result * 100) / 100.0);
         }
-        else{
-        double result = (double) (a + b) / (a - b);
-        System.out.println(Math.round(result * 100) / 100.0);
-        }
-
     }
 }
