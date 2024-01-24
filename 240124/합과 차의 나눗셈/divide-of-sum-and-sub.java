@@ -7,12 +7,9 @@ public class Main {
         String[] arr = s.split(" ");
         int a = Integer.parseInt(arr[0]);
         int b = Integer.parseInt(arr[1]);
+        
+        double result = (double) (a + b) / (a - b);
 
-        if (b == 0) {
-            System.out.println("1.00");
-        } else {
-            double result = (double) (a + b) / (a - b);
-            System.out.println(Math.round(result * 100) / 100.0);
-        }
+        System.out.printf("%.2f\n", result);
     }
 }
