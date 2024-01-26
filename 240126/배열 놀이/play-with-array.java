@@ -15,7 +15,7 @@ public class Main {
             int type = sc.nextInt();
             int a = sc.nextInt();
             int b;
-            int idx = -1;
+            int idx = 0;
 
             if (type == 1){
                 System.out.println(arrN[a-1]);
@@ -36,7 +36,7 @@ public class Main {
                 for (int k = a-1; k<b; k++){
                     System.out.print(arrN[k] + " ");
                 }
-
+                System.out.println();
             }
     }
 }
