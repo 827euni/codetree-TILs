@@ -8,7 +8,7 @@ public class Main {
         String c = sc.next();
 
         int maxNum = Math.max(a.length(), Math.max(b.length(), c.length()));
-        int minNum = Math.min(a.length(), Math.max(b.length(), c.length()));
+        int minNum = Math.min(a.length(), Math.min(b.length(), c.length()));
 
         System.out.println(maxNum-minNum);
     }
