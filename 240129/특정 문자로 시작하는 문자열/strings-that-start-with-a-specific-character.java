@@ -3,17 +3,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.nextLine(); // \n이 딸려오면 안됨. 그걸 소비해야함 
         int count = 0;
         int total = 0;
+    
+        int n = sc.nextInt();
+
         String[] arr = new String[n];
 
         for (int i = 0; i < n; i++){
-            arr[i] = sc.nextLine();
+            arr[i] = sc.next();
         }
 
-        String alp = sc.nextLine();
+        String alp = sc.next();
 
         for (int j = 0; j < n; j++){
             if(alp.charAt(0) == arr[j].charAt(0)){
