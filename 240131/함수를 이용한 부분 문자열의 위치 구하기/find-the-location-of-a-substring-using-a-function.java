@@ -9,9 +9,17 @@ public class Main {
             if(n.charAt(i) == m.charAt(j)){
                 j++;
             }
+            else{
+                j=0;
+            }
         }
 
-        return i-1;
+        if (j == m.length()){
+            return i-j;
+        }
+        else{
+            return -1;
+        }
     }
 
     public static void main(String[] args) {
