@@ -39,12 +39,12 @@ public class Main {
         }
 
 
-        if (feb==true && d > 29){
-            return false;
-        }
-
-        if (feb = false && d > 28){
-            return false;
+        if (m == 2) {
+            if (isFeb(y) && d > 29) {
+                return false;
+            } else if (!isFeb(y) && d > 28) {
+                return false;
+            }
         }
 
         return true;
