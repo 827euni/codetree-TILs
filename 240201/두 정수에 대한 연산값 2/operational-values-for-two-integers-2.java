@@ -7,8 +7,12 @@ public class Main {
 
         min += 10;
         max *= 2;
-
+        if (Math.min(a,b) == a){
         System.out.print(min + " " + max);
+        }
+        else {
+             System.out.print(max + " " + min);
+        }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
