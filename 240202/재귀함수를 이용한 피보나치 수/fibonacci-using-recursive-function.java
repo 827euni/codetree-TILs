@@ -8,7 +8,7 @@ public class Main {
             return 1;
         }
 
-        if (n==2){
+        else if (n==2){
             return 1;
         }
 
